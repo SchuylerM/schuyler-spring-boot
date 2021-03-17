@@ -8,11 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+// Adding a comment for funzies.
 @RestController
 public class Controller {
 	@GetMapping("/")
 	public Default index() {
 		return new Default("Some cool soccer facts coming soon.");
+	}
+
+	@GetMapping("/bayern")
+	public Default bayern() {
+		return new Default("Bayern is the only German team to obtain the treble.");
 	}
 }
 
