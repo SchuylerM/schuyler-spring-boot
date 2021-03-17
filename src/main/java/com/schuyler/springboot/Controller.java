@@ -20,5 +20,10 @@ public class Controller {
 	public Default bayern() {
 		return new Default("Bayern is the only German team to obtain the treble.");
 	}
+
+  @GetMapping("/mancity")
+  public Default mancity() {
+    return new Default("Manchester City is the only men's team to obtain the domestic treble in the EPL.");
+  }
 }
 
