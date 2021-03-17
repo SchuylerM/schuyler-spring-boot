@@ -15,5 +15,10 @@ public class Controller {
 	public Default index() {
 		return new Default("Some cool soccer facts coming soon.");
 	}
+
+	@GetMapping("/bayern")
+	public Default bayern() {
+		return new Default("Bayern is the only German team to obtain the treble.");
+	}
 }
 
